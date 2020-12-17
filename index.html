@@ -15,6 +15,11 @@
 
     <!-- LIEN CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- LIEN JQUERY -->
+    <link rel="stylesheet" type="text/css" href="./jquery.multiscroll.css" />
+
+
 </head>
 
 <body>
@@ -57,12 +62,108 @@
     </section>
 
     <!-- SECTION PRINCIPALE -->
-    <section>
-        <h1>Site Internet</h1>
-        <h1>Contenu Digital</h1>
-    </section>
+    
+        <div id="multiscroll">
+            <div class="ms-left">
+                <div class="ms-section one">
+                    <h2>
+                        <a href="./site_internet.html">
+                            Site Internet
+                        </a>
+                    </h2>
+                </div>
+                <div class="ms-section three">
+                    <!-- Icone ampoule -->
+                    <i class="far fa-lightbulb fa-3x"></i>
+                    <p>
+                        Sous forme de cahier des charges, ce formulaire me permettra de répondre au mieux à <span>votre demande</span>, et peut également vous aidez à y <span>voir plus clair</span>.
+                    </p>
+                    <button class="btn_devis"><a href="./demande_de_devis.html">VOYONS VOIR ÇA</a></button>
+                </div>
+                <div class="ms-section five">
+                    <h2>
+                        Contact
+                    </h2>
+                </div>
+            </div>
+            <div class="ms-right">
+                <div class="ms-section two">
+                    <h2>
+                        <a href="./contenu_digital.html">
+                            Contenu Digital
+                        </a>
+                    </h2>
+                </div>
+                <div class="ms-section four">
+                    <h2>
+                        <a href="./demande_de_devis.html">
+                            Demande de devis
+                        </a>
+                        
+                    </h2></div>
+
+                <div class="ms-section six">
+                    <div class="titre_contact">
+                        <h2>Margaux Souvairan</h2>
+                    </div>
+                    <br>
+                    <div>
+                        <address>Montpellier, 34070</address>
+                    </div>
+
+                    <div>
+                        <a href="mailto:contact@margauxsouvairan.fr">contact@margauxsouvairan.fr</a>
+                    </div>
+                    <br>
+                    <div>    
+                        <a href="tel:+33662619927">06 62 61 99 27</a>
+                    </div>
+                    
+                    <form action="post">
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    
 
     
+    <!-- LIEN SCRIPT JQUERY -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./node_modules/multiscroll.js/vendors/jquery.easings.min.js"></script>
+    <script type="text/javascript" src="./jquery.multiscroll.min.js"></script>
+
+    <!-- LIEN SCRIPT JAVASCRIPT -->
     <script src="./script.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#multiscroll').multiscroll({
+                verticalCentered : true,
+                scrollingSpeed: 700,
+                easing: 'easeInQuart',
+                menu: false,
+                sectionsColor: ['$couleur_texte', '$couleur_theme'],
+                navigation: true,
+                navigationPosition: 'right',
+                navigationColor: '#000',
+                navigationTooltips: [],
+                loopBottom: false,
+                loopTop: false,
+                css3: false,
+                paddingTop: 0,
+                paddingBottom: 0,
+                normalScrollElements: null,
+                scrollOverflow: false,
+                scrollOverflowOptions: null,
+                keyboardScrolling: true,
+                touchSensitivity: 5
+            });
+        });
+    </script>
+
+    <!-- LIEN FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/655edc4fae.js" crossorigin="anonymous"></script>
+
 </body>
 </html>

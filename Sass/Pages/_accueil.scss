@@ -1,0 +1,142 @@
+// MULTISCROLL CENTRAL
+
+.one {
+    background-color: $couleur_menu;
+    text-align: center;
+    font-size: 1.5em;
+
+    a {
+        text-decoration: none;
+        color: wheat;
+        cursor: pointer;
+    }
+}
+
+.two {
+    background-color: wheat;
+    text-align: center;
+    font-family: $design_police;
+    font-size: 1.5em;
+
+    a {
+        text-decoration: none;
+        color: $couleur_texte;
+        cursor: pointer;
+    }
+}
+
+.three {
+
+    background-color: wheat;
+    text-align: center;
+    font-family: $title_police;
+    font-size: 1.5em;
+
+    p{
+        padding: 5%;
+    }
+
+    .btn_devis {
+        background-color: wheat ;
+        font-family: $design_police;
+        font-size: 0.7em;
+        width: 11em;
+        height: 4em;
+        border: none;
+        border-radius: 50px;
+        outline: none;
+        box-shadow:  6px 6px 12px #d0be98, 
+        -6px -6px 12px #ffffce;
+
+        a {
+            text-decoration: none;
+            color: $couleur_texte;
+            cursor: pointer;
+        }
+    }
+
+    .btn_devis:hover {
+        opacity: 0.7;
+    }
+
+    .btn_devis:active {
+        opacity: 1;
+        box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
+          inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    span {
+        color: $couleur_menu;
+    }
+    
+}
+
+.four {
+    background-color: $couleur_menu;
+    text-align: center;
+    color: wheat;
+    font-size: 1.5em;
+
+    h2 {
+        font-family: $design_police;
+    }
+
+    a {
+        text-decoration: none;
+        color: wheat;
+        cursor: pointer;
+    }
+
+}
+
+.five {
+    background-color: $couleur_texte;
+    text-align: center;
+    color: wheat;
+    font-size: 1.5em;
+
+    h2 {
+        font-family: $design_police;
+    }
+
+    a {
+        text-decoration: none;
+        color: wheat;
+        cursor: pointer;
+    }
+
+}
+
+.six {
+    background-color: $couleur_texte;
+    text-align: center;
+    color: wheat;
+    font-size: 1.5em;
+
+    h2 {
+        font-family: $title_police;
+    }
+
+    a {
+        margin: 5px;
+        text-decoration: none;
+        color: wheat;
+        cursor: pointer;
+        transition: color 0.4s;
+        -webkit-transition: color 0.4s;
+    }
+
+    a:hover {
+        color: $couleur_menu;
+    }
+
+    div {
+        display: inline-block;
+        text-align: center;
+        margin: 2%;
+
+        .titre_contact {
+            margin-top: 30%;
+        }
+    }
+}
