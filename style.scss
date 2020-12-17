@@ -1,0 +1,20 @@
+// Variable
+@import "./Sass/Utils/variables";
+
+// Mixins
+@import "./Sass/Utils/mixin";
+
+// General setting
+@import "./Sass/Base/general-setting";
+
+// Header
+@import "./Sass/Layout/header";
+
+// Footer
+@import "./Sass/Layout/footer";
+
+// Pages
+@import "./Sass/Pages/accueil";
+
+// Media Queries
+@import "./Sass/Base/mediaqueries";

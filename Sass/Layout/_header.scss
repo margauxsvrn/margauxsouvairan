@@ -1,0 +1,133 @@
+// Logo
+.navigation img {
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+
+// Button menu
+.navigationCheckbox {
+    display: none;
+}
+    // Background 
+.navigationBg {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 3.3rem;
+    right: 5.5rem;
+    background-image: radial-gradient(#c46e39, #6c503b);
+    z-index: 1000;
+    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+    -webkit-transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); 
+}
+
+.navigationBtn {
+    background-color: #fff;
+    height: 5rem;
+    width: 5rem;
+    position: fixed;
+    top: 3rem;
+    right: 5rem;
+    border-radius: 50%;
+    z-index: 2000;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.1);
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.navigationIcon {
+    position: relative;
+    margin-top: 2.5rem;
+    width: 2rem;
+    height: 2px;
+    background-color: $couleur_texte;
+    display: inline-block;
+}
+
+.navigationIcon::before,
+.navigationIcon::after {
+    width: 2rem;
+    height: 2px;
+    background-color: $couleur_texte;
+    display: inline-block;
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+}
+
+.navigationIcon::before {
+    top: -.6rem;
+}
+
+.navigationIcon::after {
+    top: .6rem;
+}
+
+
+.nav {
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    opacity: 0;
+    z-index: 1500;
+    transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+
+.navigationListe {
+    position: absolute;
+    list-style-type: none;
+    text-align: center;
+    width: 100%;
+}
+
+
+.liens {
+    display: inline-block;
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.4s;
+    -webkit-transition: color 0.4s;
+}
+
+.liens:hover {
+    color: $couleur_theme;
+}
+
+    // Color button scale
+.navigationCheckbox:checked ~ .navigationBg {
+    transform: scale(80);
+    -webkit-transform: scale(80);
+}
+
+    // Menu appear 
+.navigationCheckbox:checked ~ .nav {
+    opacity: 1;
+    width: 100%;
+}
+
+    // animation button cross
+.navigationCheckbox:checked+ .navigationBtn .navigationIcon {
+    background-color: transparent;
+}
+.navigationCheckbox:checked+ .navigationBtn .navigationIcon::before {
+    top: 0;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+
+}
+.navigationCheckbox:checked+ .navigationBtn .navigationIcon::after {
+    top: 0;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
