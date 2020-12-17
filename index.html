@@ -71,6 +71,7 @@
                             Site Internet
                         </a>
                     </h2>
+                    <img src="./photo/favicon blanc.png" alt="logo margaux souvairan créatrice digitale site internet" width="100px" height="100px">
                 </div>
                 <div class="ms-section three">
                     <!-- Icone ampoule -->
@@ -78,7 +79,7 @@
                     <p>
                         Sous forme de cahier des charges, ce formulaire me permettra de répondre au mieux à <span>votre demande</span>, et peut également vous aidez à y <span>voir plus clair</span>.
                     </p>
-                    <button class="btn_devis"><a href="./demande_de_devis.html">VOYONS VOIR ÇA</a></button>
+                    <button class="btn_devis"><a href="./demande_de_devis.html">JE CLIQUE ICI</a></button>
                 </div>
                 <div class="ms-section five">
                     <h2>
@@ -110,7 +111,7 @@
                     <div>
                         <address>Montpellier, 34070</address>
                     </div>
-
+                    <br>
                     <div>
                         <a href="mailto:contact@margauxsouvairan.fr">contact@margauxsouvairan.fr</a>
                     </div>
@@ -157,7 +158,23 @@
                 scrollOverflow: false,
                 scrollOverflowOptions: null,
                 keyboardScrolling: true,
-                touchSensitivity: 5
+                touchSensitivity: 5,
+
+                //responsive
+                responsiveWidth: 0,
+                responsiveHeight: 0,
+                responsiveExpand: false,
+
+                // Custom selectors
+                sectionSelector: '.ms-section',
+                leftSelector: '.ms-left',
+                rightSelector: '.ms-right',
+
+                //events
+                onLeave: function(index, nextIndex, direction){},
+                afterLoad: function(anchorLink, index){},
+                afterRender: function(){},
+                afterResize: function(){},
             });
         });
     </script>

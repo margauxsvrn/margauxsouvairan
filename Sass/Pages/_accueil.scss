@@ -3,12 +3,19 @@
 .one {
     background-color: $couleur_menu;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.8em;
 
     a {
         text-decoration: none;
         color: wheat;
         cursor: pointer;
+    }
+
+    img {
+        position:absolute;
+        top: 0;
+        left: 5%;
+        transform: translate(50%, 50%);
     }
 }
 
@@ -38,8 +45,9 @@
 
     .btn_devis {
         background-color: wheat ;
-        font-family: $design_police;
-        font-size: 0.7em;
+        font-family: $title_police;
+        font-weight: bold;
+        font-size: 0.6em;
         width: 11em;
         height: 4em;
         border: none;
@@ -134,9 +142,14 @@
         display: inline-block;
         text-align: center;
         margin: 2%;
+        font-size: 0.9em;
 
         .titre_contact {
             margin-top: 30%;
+        }
+
+        address {
+            font-style: normal;
         }
     }
 }

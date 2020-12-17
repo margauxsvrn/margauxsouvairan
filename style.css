@@ -214,13 +214,21 @@ body {
 .one {
   background-color: #c46e39;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 
 .one a {
   text-decoration: none;
   color: wheat;
   cursor: pointer;
+}
+
+.one img {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
 }
 
 .two {
@@ -249,8 +257,9 @@ body {
 
 .three .btn_devis {
   background-color: wheat;
-  font-family: "Playfair Display", serif;
-  font-size: 0.7em;
+  font-family: "satellite", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 0.6em;
   width: 11em;
   height: 4em;
   border: none;
@@ -342,10 +351,15 @@ body {
   display: inline-block;
   text-align: center;
   margin: 2%;
+  font-size: 0.9em;
 }
 
 .six div .titre_contact {
   margin-top: 30%;
+}
+
+.six div address {
+  font-style: normal;
 }
 
 @media screen and (max-width: 920px) {
